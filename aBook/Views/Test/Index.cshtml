@@ -1,0 +1,19 @@
+﻿@using RepoaBook
+@model List<Post>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+    @foreach (Post p in Model)
+    {
+    <li>
+        @p.Overskrift
+        <br />
+        @p.Tekst
+    </li>
+    }
+</ul>
